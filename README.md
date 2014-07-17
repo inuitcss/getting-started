@@ -90,6 +90,9 @@ That order is:
 The order of partials within each layer is fairly open; it is the sections
 themselves that are important to get in the correct order.
 
+**N.B.** All partials—including your own—follow the `<section>.<file>` naming
+convention, e.g. `_objects.box.scss`, `_components.carousel.scss`.
+
 Eventually, this architecture will be written up at [itcss.io](http://itcss.io).
 Keep an eye on [the Twitter account](https://twitter.com/itcss_io) for updates.
 
