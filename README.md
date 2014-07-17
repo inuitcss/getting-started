@@ -34,7 +34,7 @@ You will need to create your own master Sass file, e.g. `main.scss`, and
 `@import` yours and inuitcss’ modules into that. This kind of architecture
 allows you to intersperse inuitcss code with your own, whereas most other CSS
 Frameworks and UI Toolkits only permit you to work before or after you’ve
-imported them. This is a perfectly valid setup in inuitcss world:
+imported them. This is a perfectly valid (example) setup in inuitcss world:
 
     @import "bower_components/inuit-defaults/settings.defaults";
     @import "settings.colors";
@@ -101,7 +101,7 @@ Keep an eye on [the Twitter account](https://twitter.com/itcss_io) for updates.
 Installing new modules via Bower is simple, just refer to the module’s GitHub
 repository’s README for the specific command.
 
-Almost all inuitcss modules depend on inuitcss’ default
+Almost all of inuitcss’ modules depend on inuitcss’ default
 [settings](https://github.com/inuitcss/settings.defaults) and
 [functions](https://github.com/inuitcss/tools.functions). If you are using Bower
 then you will get these installed automatically. If you are not using Bower,
