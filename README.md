@@ -153,3 +153,9 @@ This method of modifying the framework means that you don’t need to edit any
 files directly (thus making it easier to update the framework), but also means
 that you’re not left with huge, bloated, monolithic variables files from which
 you need to configure an entire library.
+
+## Learn by example
+
+My site, [CSS Wizardry](http://csswizardry.com), is built upon inuitcss. View
+the source code to see how things piece together, and hopefully reverse engineer
+things from there: [github.com/…/csswizardry.github.com/…/css](https://github.com/csswizardry/csswizardry.github.com/tree/master/css)
