@@ -96,6 +96,42 @@ convention, e.g. `_objects.box.scss`, `_components.carousel.scss`.
 Eventually, this architecture will be written up at [itcss.io](http://itcss.io).
 Keep an eye on [the Twitter account](https://twitter.com/itcss_io) for updates.
 
+## Core functionality
+
+There are very few **required** inuitcss modules, and the ones that are deal
+only with config and tooling.
+
+Before it can do anything, inuitcss needs to know your base `font-size` and
+`line-height`. These settings are stored in `settings.defaults` (as
+`$inuit-base-font-size` and `$inuit-base-line-height`), and can be overridden in
+the same way you’d [override any of inuitcss’
+config](https://github.com/inuitcss/getting-started#modifying-inuitcss).
+
+Probably the most opinionated thing inuitcss will ever do is reassign your
+`$inuit-base-line-height` variable to `$inuit-base-spacing-unit`. This value
+then becomes the cornerstone of your UI, acting as the default (remember, you
+can override everything in inuitcss) margin and padding value for any components
+that require it.
+
+While this might seem overly opinionated, it does mean that:
+
+1. **You get a free vertical rhythm** because everything sits on a multiple of
+   your baseline, and…
+2. **We reduce the amount of magic numbers in our codebase** because we can
+   rationalise where the majority of values in our CSS came from.
+
+A lot of inuitcss modules will also require `tools.functions`, which is a very
+simple file containing only a handful of math helper functions. These are used
+to quickly create size variants of objects, e.g.
+`padding: double($inuit-base-spacing-unit);`.
+
+The other likely piece of required functionality is the `tools.mixins` module.
+This contains a simple font-sizing mixin that is used later on in certain
+type-based modules.
+
+Aside from that, most inuitcss partials have very few interdependencies, and
+those that do are all dependency managed (if you are using Bower).
+
 ## Installing new modules
 
 Installing new modules via Bower is simple, just refer to the module’s GitHub
