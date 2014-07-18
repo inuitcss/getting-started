@@ -106,14 +106,15 @@ Because inuitcss is broken apart into lots of small, composable modules, it is
 important that you as the developer piece things together in the correct order.
 That order is:
 
-* **Settings**
-* **Tools**
-* **Generic**
-* **Base**
-* **Objects**
-* **Components** (this is the design layer; this is the one layer that inuitcss
-  doesn’t get involved with)
-* **Trumps**
+* **Settings:** Global variables, site-wide settings, config switches, etc.
+* **Tools:** Site-wide mixins and functions.
+* **Generic:** Low-specificity, far-reaching rulesets (e.g. resets).
+* **Base:** Unclassed HTML elements (e.g. `a {}`, `blockquote {}`, `address {}`).
+* **Objects:** Objects, abstractions, and design patterns (e.g. `.media {}`).
+* **Components:** Discrete, complete chunks of UI (e.g. `.carousel {}`). This is
+  the one layer that inuitcss doesn’t get involved with.
+* **Trumps:** High-specificity, very explicit selectors. Overrides and helper
+  classes (e.g. `.hidden {}`).
 
 The order of partials within each layer is fairly open; it is the sections
 themselves that are important to get in the correct order.
