@@ -259,6 +259,51 @@ Components layer. Components are small partials that contain discrete chunks of
 UI that utilise the layers that came before it, for example, a carousel, or a
 dropdown nav, or an image gallery, and so on.
 
+## Namespacing
+
+inuitcss is designed for use on larger projects, where namespacing can often be
+very useful. With this in mind, inuitcss contains two ways in which you can
+namespace its modules: globally, or on a per-component basis.
+
+### Global namespacing
+
+If you want the entire framework to carry a namespace, you simply need to
+predefine the `$inuit-namespace` variable held in `settings.defaults`, like so:
+
+    $inuit-namespace: inuitcss-;
+    @import "bower_components/inuit-defaults/settings.defaults";
+
+Now every class in every module that inuitcss imports will be prepended with
+`inuitcss-`, e.g. `.flag` now becomes `.inuitcss-flag`. This allows you to
+visually denote which classes are your own, and which are inuitcss’, and also
+helps reduce the chance of collisions.
+
+### Module namespacing
+
+If you do not wish to set a global namespace, you can set namespaces on
+individual `@imports`, e.g.:
+
+    $inuit-flag-namespace: foo-;
+    @import "bower_components/inuit-flag/objects.flag";
+
+Now the flag object’s class is `.foo-flag`, but the rest of inuitcss remains
+un-namespaced.
+
+#### Combining the two
+
+You can have a combination of global and per-component namespacing in a project:
+
+    $inuit-namespace: inuitcss-;
+    @import "bower_components/inuit-defaults/settings.defaults";
+
+    ...
+
+    $inuit-flag-namespace: foo-;
+    @import "bower_components/inuit-flag/objects.flag";
+
+Now all of your inuitcss modules will have a prefix of `inuitcss-`, except the
+flag object, whose namespace is `foo-`.
+
 ## Learn by example
 
 My site, [CSS Wizardry](http://csswizardry.com), is built upon inuitcss. View
