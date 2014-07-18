@@ -209,6 +209,45 @@ files directly (thus making it easier to update the framework), but also means
 that you’re not left with huge, bloated, monolithic variables files from which
 you need to configure an entire library.
 
+## Extending inuitcss
+
+Two things about inuitcss make it very extensible. Firstly, it is a framework in
+its truest sense; it is designed to lay an unopinionated foundation upon which
+_you_ do the majority of the work. Secondly, scalability is one of inuitcss’
+core principles, so it is designed to get larger over time.
+
+Extending inuitcss is made very simple because of its very decoupled nature. As
+opposed to having a monolithic framework which acts as one giant black box, you
+can add your own functionality in and around inuitcss code. This means that you
+can grow your codebase in any direction from any point. inuitcss has some
+default tooling, but there’s no reason you cannot create your own tools
+partials, there is no reason why you couldn’t add some of your own objects that
+inuitcss doesn’t have.
+
+To extend inuitcss, simply create a partial in the `<section>.<file>` format,
+and `@import` it wherever it is needed.
+
+As you can see in inuitcss’ implementation on my own site, I have `@imported`
+the default inuitcss `base.page` module, and also added [one of my own to extend
+the default module’s functionality](https://github.com/csswizardry/csswizardry.github.com/blob/5a6bfbabc5f30b717d57e075a8f9261062830b31/css/csswizardry.scss#L116-L117).
+
+**inuitcss is not designed to do your work for you, it is designed to help you
+do your own work _faster_.**
+
+### Components
+
+inuitcss is a design-free, OOCSS framework—it does its best to provide zero
+cosmetic styling. This means that inuitcss can be used on any and all types of
+project (and it has been) without dictating (or even suggesting) a
+look-and-feel. If you do require a UI out of the box, then inuitcss is probably
+not the best tool for you. I’d recommend looking at a UI Toolkit such as
+[Bootstrap](http://getbootstrap.com/).
+
+Because inuitcss does no cosmetic styling, it is up to you to author the
+Components layer. Components are small partials that contain discrete chunks of
+UI that utilise the layers that came before it, for example, a carousel, or a
+dropdown nav, or an image gallery, and so on.
+
 ## Learn by example
 
 My site, [CSS Wizardry](http://csswizardry.com), is built upon inuitcss. View
