@@ -182,6 +182,25 @@ files to disk. What is important, however, is that you ensure you have the
 correct versions of each file (Bower would solve this problem for you
 automatically), and that you include them in the correct order.
 
+## Off by default
+
+In the interests of reducing the amount of code in your project, all of
+inuitcss’ module-variants are turned off by default. This gives inuitcss two
+layers of reduced bloat:
+
+1. **You only include the specific files you need**, so you’re immediately
+   starting with a very trimmed down codebase.
+2. **Any variants are switched off by default**, so if you _just_ want buttons,
+   you don’t get every different size and permutation of them unless you
+   explicitly tell inuitcss you want them.
+
+To turn features on, just set their switches to true (again, _before_ you
+`@import` the file):
+
+    $inuit-enable-btn--full:    true;
+    $inuit-enable-btn--large:   true;
+    @import "bower_components/inuit-buttons/objects.buttons";
+
 ## Modifying inuitcss
 
 inuitcss is highly configurable, but **should not be edited directly**. The
