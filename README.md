@@ -185,6 +185,10 @@ of its variables immediately before the `@import`:
     $inuit-enable-flag--responsive: true;
     @import "bower_components/inuit-flag/objects.flag";
 
+You could also chunk your inuitcss overrides into their own file,
+`settings.inuitcss`, for example. Again, this (as with all inuitcss overrides)
+needs `@importing` **before** the inuitcss partial to which it relates.
+
 This method of modifying the framework means that you don’t need to edit any
 files directly (thus making it easier to update the framework), but also means
 that you’re not left with huge, bloated, monolithic variables files from which
