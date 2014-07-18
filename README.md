@@ -13,8 +13,10 @@ Kit]((https://github.com/inuitcss/starter-kit)) comes in at 1KB, gzipped), and
 can be scaled as much or as little as you need.
 
 inuitcss provides a solid architectural foundation upon which you can build any
-size or style of website or app. inuitcss has been used on single-page marketing
-sites, medium-sized blogs, to full products for the likes of the NHS. inuitcss
+size or style of website or app. inuitcss has been used on [single-page
+marketing sites](https://www.fasetto.com/), [medium-sized
+blogs](http://csswizardry.com), to [full products for the likes of the
+NHS](http://csswizardry.com/case-studies/nhs-nhsx-elearning-platform/). inuitcss
 is what you make of it—it helps you get started, and then gets out of your way.
 
 inuitcss is a framework in its truest sense. It is not a UI Toolkit, with
