@@ -53,6 +53,31 @@ in the following order:
 
 This source order is imperative, and underpins the entire inuitcss framework.
 
+If you are new to [Bower](http://bower.io/), but would like to install inuitcss
+through it, then this is a quick guide to getting up and running:
+
+Install Bower globally (`-g`).
+
+    $ [sudo] npm install -g bower
+
+Initialise Bower in your CSS directory (and follow the command line wizard):
+
+    $ cd path/to/your/css/directory
+    $ bower init
+
+Once you have filled out the interactive wizard, you should now have a new
+`bower.json` file in your current (i.e. CSS) directory.
+
+From here on in, running:
+
+    $ bower install --save inuit-[module]
+
+…inside the same directory will install the specified module in a
+`bower_components` directory, and will save it (`--save`) to your `bower.json`.
+
+That really is a very superficial overview; please do be sure to take the time
+to [read up on Bower](http://bower.io/).
+
 ## Setting up a project
 
 With inuitcss, you are in charge of almost everything; this includes your master
