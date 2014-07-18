@@ -29,7 +29,7 @@ but upon the principles of a solid, scalable CSS architecture.
 
 Say goodbye to bloated old UI Toolkits and opinionated, monolithic libraries.
 
-**Say hello to inuitcss.**
+**Say hello to inuitcss.** ![inuitcss](logo-inuitcss-tiny.png)
 
 ## As quick as possible
 
