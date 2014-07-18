@@ -7,12 +7,23 @@ stuff in place, I hope this will see to 90% of questions and issues.
 
 ## What is inuitcss?
 
+inuitcss is an powerful, Sass-based, OOCSS framework designed with scalability
+and performance in mind. It has a tiny footprint (the [Starter
+Kit]((https://github.com/inuitcss/starter-kit)) comes in at 1KB, gzipped), and
+can be scaled as much or as little as you need.
+
+inuitcss provides a solid architectural foundation upon which you can build and
+size or style of website or app. inuitcss has been used on single-page marketing
+sites, medium-sized blogs, to full products for the likes of the NHS. inuitcss
+is what you make of it—it helps you get started, and then gets out of your way.
+
 inuitcss is a framework in its truest sense. It is not a UI Toolkit, with
 opinionated views on design; it is not one giant download, with hundreds of
 unnecessary lines of CSS; it is not a 1001-UI-components-plus-the-kitchen-sink,
-with swathes of bloated rules. It is a collection of tiny, composable,
+with loads of bloated rules. It is a collection of tiny, composable,
 configurable, interdependent modules that you can piece together how you want
-to, when you want to.
+to, when you want to. inuitcss’ focus is less upon the actual code within it,
+but upon the principles of a solid, scalable CSS architecture.
 
 Say goodbye to bloated old UI Toolkits and opinionated, monolithic libraries.
 
