@@ -12,7 +12,7 @@ and performance in mind. It has a tiny footprint (the [Starter
 Kit]((https://github.com/inuitcss/starter-kit)) comes in at 1KB, gzipped), and
 can be scaled as much or as little as you need.
 
-inuitcss provides a solid architectural foundation upon which you can build and
+inuitcss provides a solid architectural foundation upon which you can build any
 size or style of website or app. inuitcss has been used on single-page marketing
 sites, medium-sized blogs, to full products for the likes of the NHS. inuitcss
 is what you make of it—it helps you get started, and then gets out of your way.
