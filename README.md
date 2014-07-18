@@ -53,6 +53,8 @@ in the following order:
 
 This source order is imperative, and underpins the entire inuitcss framework.
 
+## New to Bower?
+
 If you are new to [Bower](http://bower.io/), but would like to install inuitcss
 through it, then this is a quick guide to getting up and running:
 
