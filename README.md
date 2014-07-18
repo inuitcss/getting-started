@@ -1,6 +1,6 @@
-# Getting started
-
 ![inuitcss](logo-inuitcss.png)
+
+# Getting started
 
 This is the interim documentation for the new inuitcss. Until we get some proper
 stuff in place, I hope this will see to 90% of questions and issues.
