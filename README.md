@@ -1,7 +1,22 @@
 # Getting started
 
+![inuitcss](logo-inuitcss.png)
+
 This is the interim documentation for the new inuitcss. Until we get some proper
 stuff in place, I hope this will see to 90% of questions and issues.
+
+## What is inuitcss?
+
+inuitcss is a framework in its truest sense. It is not a UI Toolkit, with
+opinionated views on design; it is not one giant download, with hundreds of
+unnecessary lines of CSS; it is not a 1001-UI-components-plus-the-kitchen-sink,
+with swathes of bloated rules. It is a collection of tiny, composable,
+configurable, interdependent modules that you can piece together how you want
+to, when you want to.
+
+Say goodbye to bloated old UI Toolkits and opinionated, monolithic libraries.
+
+Say hello to inuitcss.
 
 ## As quick as possible
 
