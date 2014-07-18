@@ -16,7 +16,7 @@ to, when you want to.
 
 Say goodbye to bloated old UI Toolkits and opinionated, monolithic libraries.
 
-Say hello to inuitcss.
+**Say hello to inuitcss.**
 
 ## As quick as possible
 
