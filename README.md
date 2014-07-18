@@ -146,8 +146,10 @@ While this might seem overly opinionated, it does mean that:
 
 1. **You get a free vertical rhythm** because everything sits on a multiple of
    your baseline, and…
-2. **We reduce the amount of magic numbers in our codebase** because we can
-   rationalise where the majority of values in our CSS came from.
+2. **We reduce the amount of [magic
+   numbers](http://csswizardry.com/2012/11/code-smells-in-css/#magic-numbers) in
+   our codebase** because we can rationalise where the majority of values in our
+   CSS came from.
 
 A lot of inuitcss modules will also require `tools.functions`, which is a very
 simple file containing only a handful of math helper functions. These are used
