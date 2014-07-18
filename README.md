@@ -6,7 +6,13 @@ stuff in place, I hope this will see to 90% of questions and issues.
 ## As quick as possible
 
 The quickest, simplest way to get started with inuitcss is via the [Starter
-Kit](https://github.com/inuitcss/starter-kit). Simply run
+Kit](https://github.com/inuitcss/starter-kit). 
+
+NB. If you have not previously installed Bower, first do so globally: 
+    $ [sudo] npm install -g bower
+then initialize an instance of it in your working directory:
+    $ bower init
+After that you can simply run
 
     $ bower install --save inuit-starter-kit
 
