@@ -296,6 +296,26 @@ the default module’s functionality](https://github.com/csswizardry/csswizardry
 **inuitcss is not designed to do your work for you, it is designed to help you
 do your own work _faster_.**
 
+### Aliases
+
+In order to avoid clashes with your own code, all of inuitcss’ mixins and
+variables are namespaced with `inuit-`, for example: `$inuit-base-spacing-unit`.
+These variables and mixins can become very tedious and time consuming to type
+over and over, so it is recommended that you alias them to something a little
+shorter. You can do this by creating a `tools.aliases` file
+(`_tools.aliases.scss`) which would be populated with code like this:
+
+    // Reassign `$inuit-base-spacing-unit` to `$spacing-unit`.
+    $inuit-base-spacing-unit: $spacing-unit;
+
+    // Reassign lengthy font-size mixin to `font-size()`.
+    @mixin font-size($args...) {
+        @include inuit-font-size($args...);
+    }
+
+You can now use your own aliases onto inuitcss’ defaults throughout your
+project.
+
 ### Components
 
 inuitcss is a design-free, OOCSS framework—it does its best to provide zero
