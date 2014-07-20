@@ -306,7 +306,7 @@ shorter. You can do this by creating a `tools.aliases` file
 (`_tools.aliases.scss`) which would be populated with code like this:
 
     // Reassign `$inuit-base-spacing-unit` to `$spacing-unit`.
-    $inuit-base-spacing-unit: $spacing-unit;
+    $spacing-unit: $inuit-base-spacing-unit;
 
     // Reassign lengthy font-size mixin to `font-size()`.
     @mixin font-size($args...) {
