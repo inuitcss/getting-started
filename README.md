@@ -7,7 +7,7 @@ stuff in place, I hope this will see to 90% of questions and issues.
 
 ## What is inuitcss?
 
-inuitcss is an powerful, Sass-based, OOCSS framework designed with scalability
+inuitcss is a powerful, Sass-based, OOCSS framework designed with scalability
 and performance in mind. It has a tiny footprint (the [Starter
 Kit]((https://github.com/inuitcss/starter-kit)) comes in at 1KB, gzipped), and
 can be scaled as much or as little as you need.
