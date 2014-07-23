@@ -7,7 +7,7 @@ stuff in place, I hope this will see to 90% of questions and issues.
 
 ## What is inuitcss?
 
-inuitcss is a powerful, Sass-based, OOCSS framework designed with scalability
+inuitcss is a powerful, Sass-based, BEM, OOCSS framework designed with scalability
 and performance in mind. It has a tiny footprint (the [Starter
 Kit]((https://github.com/inuitcss/starter-kit)) comes in at 1KB, gzipped), and
 can be scaled as much or as little as you need.
@@ -38,7 +38,7 @@ Kit](https://github.com/inuitcss/starter-kit). Simply run
 
     $ bower install --save inuit-starter-kit
 
-…to grab the correct dependencies, and then import then into a bare Sass project
+…to grab the correct dependencies, and then import them into a bare Sass project
 in the following order:
 
     @import "bower_components/inuit-defaults/settings.defaults";
@@ -233,12 +233,12 @@ of its variables immediately before the `@import`:
     $inuit-btn-radius:          3px;
     $inuit-enable-btn--full:    true;
     @import "bower_components/inuit-buttons/objects.buttons";
-    
+
     $inuit-enable-layout--middle:   true;
     @import "bower_components/inuit-layout/objects.layout";
-    
+
     @import "bower_components/inuit-media/objects.media";
-    
+
     $inuit-enable-flag--rev:        true;
     $inuit-enable-flag--responsive: true;
     @import "bower_components/inuit-flag/objects.flag";
