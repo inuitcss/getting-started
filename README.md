@@ -38,6 +38,10 @@ Kit](https://github.com/inuitcss/starter-kit). Simply run
 
     $ bower install --save inuit-starter-kit
 
+or use npm for this:
+
+    $ npm install --save inuit-starter-kit
+
 …to grab the correct dependencies, and then import them into a bare Sass project
 in the following order:
 
@@ -52,11 +56,19 @@ in the following order:
     @import "bower_components/inuit-page/base.page";
 
 This source order is imperative, and underpins the entire inuitcss framework.
+If you use npm instead, replace `bower_components` with `node_modules`.
 
-## New to Bower?
+## New to Bower / npm?
 
-If you are new to [Bower](http://bower.io/), but would like to install inuitcss
-through it, then this is a quick guide to getting up and running:
+If you are new to [Bower](http://bower.io/) or [npm](https://www.npmjs.com/),
+but would like to install inuitcss through it, then this is a quick guide to
+getting up and running:
+
+Install [node.js](http://nodejs.org/) on your system following the website’s
+instructions. This automatically installs `npm` for you.
+
+If you want to use Bower in addition, follow the next steps. Otherwise
+continue from installing the individual modules of inuit.
 
 Install Bower globally (`-g`).
 
@@ -201,7 +213,7 @@ Almost all of inuitcss’ modules depend on inuitcss’ default
 then you will get these installed automatically. If you are not using Bower,
 please ensure you have downloaded them manually.
 
-### Not using Bower?
+### Not using Bower / npm?
 
 That’s cool, you can either install inuitcss dependencies as [Git
 Submodules](http://git-scm.com/docs/git-submodule), or just save the individual
