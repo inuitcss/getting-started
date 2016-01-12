@@ -58,6 +58,12 @@ in the following order:
 This source order is imperative, and underpins the entire inuitcss framework.
 If you use npm instead, replace `bower_components` with `node_modules`.
 
+If you develop an Ember.js app you can run
+
+    $ ember install ember-cli-inuitcss
+
+to install an addon that provides the most common packages. See the addons [README](https://github.com/funkensturm/ember-cli-inuitcss#usage) for more information.
+
 ## New to Bower / npm?
 
 If you are new to [Bower](http://bower.io/) or [npm](https://www.npmjs.com/),
